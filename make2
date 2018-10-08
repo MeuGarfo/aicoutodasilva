@@ -1,0 +1,44 @@
+#!/bin/bash
+clear
+
+criar_categoria() {
+    clear
+    echo "Digite o nome da categoria:"
+    read categoria
+    mkdir "md/$categoria"
+    echo "pronto"
+}
+
+criar_pagina() {
+    clear
+    echo "Digite o nome da pagina:"
+    read pagina
+    nano "md/$pagina.md"
+    echo "pronto"
+}
+
+criar_post() {
+    clear
+    echo "Digite o nome da categoria:"
+    read categoria
+    clear
+    echo "Digite o nome do post:"
+    read post
+    nano "md/$categoria/$post.md"
+    echo "pronto"
+}
+
+echo "Digite a opção:"
+echo "1) criar categoria"
+echo "2) criar página"
+echo "3) criar post"
+printf "Opção número "
+read opt
+
+case $opt
+in
+    1) criar_categoria ;;
+    2) criar_pagina ;;
+    3) criar_post ;;
+    *) echo "opção inválida" ;;
+esac
