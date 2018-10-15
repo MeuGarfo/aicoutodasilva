@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "basic/migration",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/hackergaucho/migration.git",
-                "reference": "db4c14d904137466ba8bca54dd84cc03ed26ca9f"
+                "url": "https://github.com/aicoutodasilva/migration.git",
+                "reference": "2eef5a98b133d12e3d736e0aec9c6f541d7c0020"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hackergaucho/migration/zipball/db4c14d904137466ba8bca54dd84cc03ed26ca9f",
-                "reference": "db4c14d904137466ba8bca54dd84cc03ed26ca9f",
+                "url": "https://api.github.com/repos/aicoutodasilva/migration/zipball/2eef5a98b133d12e3d736e0aec9c6f541d7c0020",
+                "reference": "2eef5a98b133d12e3d736e0aec9c6f541d7c0020",
                 "shasum": ""
             },
             "require": {
@@ -35,7 +35,7 @@
                 "MIT"
             ],
             "description": "Sistema básico de migration",
-            "time": "2018-09-18 19:17:05"
+            "time": "2018-10-15 18:54:15"
         },
         {
             "name": "catfan/medoo",

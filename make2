@@ -1,9 +1,9 @@
 #!/bin/bash
 clear
 
-criarAdmin(){
+criarContaDeAdministrador(){
     clear
-    php bin/criarAdmin.php
+    php bin/criarContaDeAdministrador.php
     echo "pronto"
 }
 
@@ -23,6 +23,6 @@ read opt
 case $opt
 in
     1) migrarTabelas ;;
-    2) criarAdmin ;;
+    2) criarContaDeAdministrador ;;
     *) echo "opção inválida" ;;
 esac

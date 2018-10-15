@@ -1,3 +1,4 @@
 id
 email
-password_hash
+password
+type
