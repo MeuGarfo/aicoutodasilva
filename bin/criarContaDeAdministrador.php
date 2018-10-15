@@ -23,7 +23,7 @@ function digitarEmail(){
         system('clear');
         if($user){
             //atualizar senha
-            $user['password']=password_hash($password, PASSWORD_DEFAULT);
+            $user['password']=passwordHash($password);
             $user['updated_at']=time();
             $user['type']='admin';
             if($db->update('user',$user,$where)){
@@ -34,6 +34,7 @@ function digitarEmail(){
         }else{
             //criar usuário
             system('clear');
+            $password=passwordHash($password);
             $user=[
                 'email'=>$email,
                 'password'=>$password,
