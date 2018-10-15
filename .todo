@@ -4,7 +4,7 @@
         consertar bug do basic/migration que não apaga colunas mortas (linha 74)
     </note>
     <note priority="medium" time="1539608333">
-        tela de login
+        tela de login com autenticação e cookie de sessão
     </note>
     <note priority="medium" time="1539608344">
         tela de criação de post em markdown
