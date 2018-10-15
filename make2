@@ -4,7 +4,6 @@ clear
 criarContaDeAdministrador(){
     clear
     php bin/criarContaDeAdministrador.php
-    echo "pronto"
 }
 
 migrarTabelas() {

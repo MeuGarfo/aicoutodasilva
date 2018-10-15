@@ -4,8 +4,6 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 require './inc/autoload.php';
 
-require 'migration/src/Migration.php';
-
 $Migration=new Basic\Migration(db());
 
 $db='aicoutodasilva';
