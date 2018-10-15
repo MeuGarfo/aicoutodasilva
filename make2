@@ -1,0 +1,20 @@
+#!/bin/bash
+clear
+
+migrar_tabelas() {
+    clear
+    echo "migrando as tabelas..."
+    php bin/migrate.php
+    echo "pronto"
+}
+
+echo "Digite a opção:"
+echo "1) migrar tabelas"
+printf "Opção número "
+read opt
+
+case $opt
+in
+    1) migrar_tabelas ;;
+    *) echo "opção inválida" ;;
+esac
