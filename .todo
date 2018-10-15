@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<todo version="0.1.20">
+    <note priority="medium" time="1539608333">
+        tela de login
+    </note>
+    <note priority="medium" time="1539608344">
+        tela de criação de post em markdown
+    </note>
+    <note priority="medium" time="1539608353">
+        tela de exibição de post em html
+    </note>
+    <note priority="medium" time="1539608361">
+        home page com os 5 últimos posts
+    </note>
+    <note priority="medium" time="1539608370">
+        feed com os 5 últimos posts
+    </note>
+    <note priority="medium" time="1539608379">
+        sidebar com categorias
+    </note>
+    <note priority="medium" time="1539608387">
+        lista de posts com links para edição e exclusão
+    </note>
+    <note priority="medium" time="1539608401">
+        lista de categorias para edição e exclusão
+    </note>
+    <note priority="medium" time="1539608409">
+        redirecionamento de posts renomeados
+    </note>
+</todo>

@@ -1,2 +1,2 @@
 <?php
-print 'olá mundo';
+view('home');
