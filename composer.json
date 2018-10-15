@@ -1,5 +1,6 @@
 {
     "require": {
-        "basic/migration": "^2.1"
+        "basic/migration": "^2.1",
+        "simplepie/simplepie": "1.5.2"
     }
 }

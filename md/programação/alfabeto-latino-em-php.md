@@ -1,1 +1,0 @@
-# Alfabeto latino em PHP
