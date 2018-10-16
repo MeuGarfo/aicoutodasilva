@@ -3,7 +3,7 @@
     <note priority="high" time="1539612714" done="1539631241">
         consertar bug do basic/migration que não apaga colunas mortas (linha 74)
     </note>
-    <note priority="medium" time="1539608333">
+    <note priority="medium" time="1539608333" done="1539716051">
         tela de login com autenticação e cookie de sessão
     </note>
     <note priority="medium" time="1539608344">
@@ -29,5 +29,8 @@
     </note>
     <note priority="medium" time="1539608409">
         redirecionamento de posts renomeados
+    </note>
+    <note priority="medium" time="1539716489">
+        upload de imagem de exibição para o facebook
     </note>
 </todo>
