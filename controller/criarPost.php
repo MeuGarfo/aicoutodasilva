@@ -6,6 +6,7 @@ if($data['user']){
         view('criarPost',$data);
     }else{
         //salvar o post
+        controller("salvarPost",$data);
     }
 }else{
 

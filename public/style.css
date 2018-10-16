@@ -1,3 +1,25 @@
-button,input,textarea{
+*{
+    margin:0;
+    padding: 0;
+}
+button,input,select,textarea{
     margin-bottom: 1em;
+}
+input,select,textarea{
+    width: 100%;
+}
+label{
+    font-weight: bold;
+}
+ol,ul{
+    margin-left: 1em;
+}
+td{
+    padding:1em;
+}
+/*firefox*/
+@supports (-moz-appearance:meterbar) {
+    input[type='text']{
+        max-width: calc(100% - 1em);
+    }
 }

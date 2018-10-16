@@ -28,7 +28,7 @@ function dadosCorretos($user,$db){
         'id'=>$user['id']
     ];
     $db->update('user',$user,$where);
-    redirect('/listaDePosts');
+    redirect('/criarPost');
 }
 
 function dadosIncorretos(){
