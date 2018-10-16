@@ -27,7 +27,7 @@
             </td>
             <td width="25%" valign="top">
                 <button type="button" name="draft" value="1">
-                    Salvar como rascunho
+                    Salvar
                 </button>
                 <button type="button" name="draft" value="0">
                     Publicar
