@@ -7,7 +7,7 @@ $user=$db->get('user','*',$where);
 if($user){
     $password=@$_POST['password'];
     if(passwordVerify($password,$user['password'])){
-        print 'login ok';
+        dadosCorretos($user,$db);
     }else{
         dadosIncorretos();
     }
@@ -15,11 +15,22 @@ if($user){
     dadosIncorretos();
 }
 
-function dadosCorretos(){
-    
+function dadosCorretos($user,$db){
+    $user['token']=getToken();
+    $mins=60;
+    $horas=60*$mins;
+    $dias=24*$horas;
+    $anos=365*$dias;
+    $user['token_expiration']=time()+(2*$anos);
+    newCookie('user_id',$user['id'],$user['token_expiration']);
+    newCookie('token',$user['token'],$user['token_expiration']);
+    $where=[
+        'id'=>$user['id']
+    ];
+    $db->update('user',$user,$where);
+    redirect('/listaDePosts');
 }
 
 function dadosIncorretos(){
-    $url='/entrar?erro';
-    header('Location: '.$url);
+    redirect('/entrar?erro');
 }

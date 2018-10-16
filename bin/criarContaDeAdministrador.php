@@ -4,25 +4,28 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 require './inc/autoload.php';
 
-print 'Digite seu email e aperte enter'.PHP_EOL;
+pedirDados();
 
-digitarEmail();
-
-function digitarEmail(){
+function pedirDados(){
     $db=db();
+    print 'Digite seu nome completo e aperte enter'.PHP_EOL;
+    $name = readline("Nome completo: ");
+    system('clear');
+    print 'Digite seu email e aperte enter'.PHP_EOL;
     $email = readline("Email: ");
+    system('clear');
     $email=isEmail($email);
     if($email){
         $where=[
             'email'=>$email
         ];
         $user=$db->get("user","*",$where);
-        system('clear');
         print 'Digite sua senha e aperte enter'.PHP_EOL;
         $password = readline("Senha: ");
         system('clear');
         if($user){
             //atualizar senha
+            $user['name']=$name;
             $user['password']=passwordHash($password);
             $user['updated_at']=time();
             $user['type']='admin';
@@ -36,6 +39,7 @@ function digitarEmail(){
             system('clear');
             $password=passwordHash($password);
             $user=[
+                'name'=>$name,
                 'email'=>$email,
                 'password'=>$password,
                 'created_at'=>time(),
@@ -49,6 +53,6 @@ function digitarEmail(){
             }
         }
     }else{
-        digitarEmail();
+        pedirDados();
     }
 }

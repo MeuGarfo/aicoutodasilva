@@ -1,6 +1,9 @@
 id
+name
 email
 password
+token
+token_expiration
 type
 created_at
 updated_at

@@ -8,6 +8,9 @@ switch ($primeiroSegmento) {
     case 'entrar':
         controller("entrar");
         break;
+    case 'listaDePosts':
+        controller("listaDePosts");
+        break;
     default:
         // code...
         break;
