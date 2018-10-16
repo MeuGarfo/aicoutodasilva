@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "basic/migration",
-            "version": "2.1.2",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aicoutodasilva/migration.git",
-                "reference": "2eef5a98b133d12e3d736e0aec9c6f541d7c0020"
+                "reference": "8882d0b405b86574363321db7437757fe69cfab5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aicoutodasilva/migration/zipball/2eef5a98b133d12e3d736e0aec9c6f541d7c0020",
-                "reference": "2eef5a98b133d12e3d736e0aec9c6f541d7c0020",
+                "url": "https://api.github.com/repos/aicoutodasilva/migration/zipball/8882d0b405b86574363321db7437757fe69cfab5",
+                "reference": "8882d0b405b86574363321db7437757fe69cfab5",
                 "shasum": ""
             },
             "require": {
@@ -35,7 +35,7 @@
                 "MIT"
             ],
             "description": "Sistema básico de migration",
-            "time": "2018-10-15 18:54:15"
+            "time": "2018-10-16 00:42:58"
         },
         {
             "name": "catfan/medoo",
