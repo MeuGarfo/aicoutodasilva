@@ -1,9 +1,10 @@
 id
+title
+description
+content
+draft
 slug_original
 slug_atual
-title
+user_id
 created_at
 updated_at
-content
-user_id
-draft
